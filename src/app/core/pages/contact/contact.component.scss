@@ -1,0 +1,11 @@
+h1 {
+    @apply text-right text-3xl
+}
+
+footer, section {
+    @apply flex items-center gap-5
+}
+
+span.material-symbols-outlined {
+    @apply text-4xl;
+}

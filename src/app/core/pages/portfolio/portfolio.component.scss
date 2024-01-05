@@ -1,0 +1,24 @@
+h1 {
+  @apply text-3xl text-right;
+}
+
+section {
+  @apply rounded-md px-3 py-2;
+  border: solid 1px rgb(255, 99, 132);
+}
+
+span.material-symbols-outlined {
+  @apply rounded-md text-[18px] w-14 h-14 m-1 bg-black/50 font-extrabold flex items-center justify-center;
+}
+
+.close {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.circle {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #bc13fe,
+    0 0 82px #bc13fe, 0 0 92px #bc13fe, 0 0 102px #bc13fe, 0 0 151px #bc13fe;
+}

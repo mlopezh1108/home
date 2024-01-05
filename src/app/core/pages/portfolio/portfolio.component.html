@@ -1,0 +1,16 @@
+<h1 id="projects">Proyectos</h1>
+<main>
+  <section class="w-fit">
+    <a routerLink="/tic-tac-toe" class="flex flex-col items-center">
+      <p>Conecta 3 (🐱)</p>
+      <br>
+      <div class="flex flex-wrap w-[195px] ">
+        @for (col of board; track $index) { @for (row of col; track $index) {
+        <span class="material-symbols-outlined" [ngClass]="row === 'X' ? 'close' : 'circle'">
+          {{ row }}
+        </span>
+        } }
+      </div>
+    </a>
+  </section>
+</main>
