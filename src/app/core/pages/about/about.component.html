@@ -1,0 +1,39 @@
+<article id="about">
+    <h1 class="text-right">Acerca de mí</h1>
+    <br />
+    <p>{{ sumary }}</p>
+    <br />
+    <main>
+      <section>
+        <h1>Formación Académica</h1>
+        <br />
+        @for (item of courses; track $index) {
+        <home-card
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [description]="item.description"
+        ></home-card>
+        <br />
+        }
+  
+        <h1>Habilidades y Conocimientos</h1>
+        <br />
+  
+        <canvas id="chart" ></canvas>
+  
+      </section>
+      <section>
+        <h1>Experiencia Laboral</h1>
+        <br />
+        @for (item of jobs; track $index) {
+        <home-card
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [description]="item.description"
+          [body]="item.body"
+        ></home-card>
+        <br />
+        }
+      </section>
+    </main>
+  </article>

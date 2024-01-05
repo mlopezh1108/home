@@ -1,0 +1,30 @@
+<main>
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <h1>Conecta 3 (🐱)</h1>
+  <div class="board">
+    @for (col of board; track col; let colI = $index) { @for (row of col; track
+    row; let rowI = $index ) {
+    <section
+      [class]="'cell material-symbols-outlined ' + row"
+      (click)="selectCell(colI, rowI)"
+    >
+      {{ row }}
+    </section>
+    } }
+  </div>
+  <div class="score">
+    <h2>Turno</h2>
+    <section class="turn">
+      <label for="">Jugador:</label>
+      <i [class]="'material-symbols-outlined ' + player"> {{ player }} </i>
+    </section>
+    @if (winner) {
+    <button (click)="cleanBoard()">REINICIAR</button>
+    }
+  </div>
+  <a class="return" routerLink="/">
+    <i class="material-symbols-outlined">arrow_back</i>
+  </a>
+</main>

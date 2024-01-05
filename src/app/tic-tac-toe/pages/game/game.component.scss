@@ -1,0 +1,50 @@
+main {
+  @apply p-5 w-full h-full flex flex-col items-center relative;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
+
+h1 {
+  @apply text-5xl text-center text-sky-600 font-light;
+}
+
+div.board {
+  @apply flex flex-wrap m-auto sm:w-[400px] sm:h-[400px] lg:w-[600px] lg:h-[600px];
+}
+
+section.cell {
+  @apply font-bold w-[calc(33.3333%_-_16px)] h-[calc(33.3333%_-_16px)] sm:text-8xl lg:text-9xl flex items-center justify-center m-2 rounded-md;
+  @apply bg-black/10 relative cursor-pointer whitespace-nowrap transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)] hue-rotate-180;
+}
+
+section.turn {
+  @apply flex items-center gap-2;
+}
+
+.score {
+  @apply absolute top-10 right-10;
+}
+
+.score h2 {
+  @apply text-xl font-light text-center;
+}
+
+button {
+  @apply bg-sky-700 text-white px-3 py-2 rounded-md;
+}
+
+.return {
+  @apply absolute top-10 left-10 hover:scale-150;
+}
+
+.close {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.circle {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #bc13fe,
+    0 0 82px #bc13fe, 0 0 92px #bc13fe, 0 0 102px #bc13fe, 0 0 151px #bc13fe;
+}

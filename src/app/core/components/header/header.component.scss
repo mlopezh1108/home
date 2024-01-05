@@ -1,0 +1,32 @@
+header {
+  @apply w-full min-h-20 px-5 py-3 flex flex-wrap items-end justify-end  relative;
+  @apply bg-[url('https://cutt.ly/kwHkPYtD')] bg-no-repeat bg-cover bg-opacity-90;
+  @apply fixed top-0 w-full z-50;
+}
+
+section {
+  @apply mx-auto sm:w-full lg:w-fit bg-[rgba(0,0,0,0.4)] px-2 py-1 rounded-md;
+  h1,
+  h2 {
+    @apply text-center;
+  }
+  h1 {
+    @apply text-2xl font-light;
+  }
+  h2 {
+    @apply font-thin;
+  }
+}
+
+img {
+  @apply rounded-full h-32 object-cover absolute left-5 -bottom-16;
+  border: solid 2px white;
+}
+
+nav {
+  @apply justify-center flex items-center h-full sm:w-full lg:w-fit;
+}
+
+a {
+  @apply flex items-center gap-3 px-5 py-3 rounded-md cursor-pointer hover:bg-[rgba(255,255,255,0.1)] hover:font-semibold;
+}
