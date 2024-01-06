@@ -1,7 +1,7 @@
 header {
   @apply w-full min-h-20 px-5 py-3 flex flex-wrap items-end justify-end  relative;
-  @apply bg-[url('/assets/ce.jpg')] bg-no-repeat bg-cover bg-opacity-90;
-  @apply fixed top-0 w-full z-50;
+  @apply bg-[url('../../../../assets/ce.jpg')] bg-no-repeat bg-cover bg-opacity-90;
+  @apply fixed top-0 w-full z-50 bg-sky-600;
 }
 
 section {
