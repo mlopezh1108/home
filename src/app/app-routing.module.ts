@@ -9,6 +9,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./tic-tac-toe/tic-tac-toe.module').then((m) => m.TicTacToeModule),
   },
+  {
+    path: '**',
+    redirectTo: ''
+  }
 ];
 
 @NgModule({
