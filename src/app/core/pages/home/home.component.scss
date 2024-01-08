@@ -1,7 +1,7 @@
-home-header {
-    @apply fixed top-0 z-50 w-full;
+:host {
+    @apply flex flex-col w-full h-full overflow-hidden;
 }
 
 main {
-    @apply mt-36 px-10;
+    @apply overflow-y-auto px-10;
 }

@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
       <h2 class="text-2xl font-semibold">{{ title }}</h2>
       <h3 class="text-xl font-light">{{ subtitle }}</h3>
       @if (description) {
-      <sub class="font-light mt-1">({{ description }})</sub>
+      <summary class="font-light mt-1 text-sm">({{ description }})</summary>
       <br>
       }
       <p class="font-thin text-justify">{{ body }}</p>
