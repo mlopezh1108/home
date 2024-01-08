@@ -9,12 +9,12 @@ h1 {
 }
 
 div.board {
-  @apply flex flex-wrap m-auto sm:w-[400px] sm:h-[400px] lg:w-[600px] lg:h-[600px];
+  @apply flex flex-wrap m-auto w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[600px] lg:h-[600px];
 }
 
 section.cell {
-  @apply font-bold w-[calc(33.3333%_-_16px)] h-[calc(33.3333%_-_16px)] sm:text-8xl lg:text-9xl flex items-center justify-center m-2 rounded-md;
-  @apply bg-black/10 relative cursor-pointer whitespace-nowrap transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)] hue-rotate-180;
+  @apply border-solid border-2 border-sky-600/20 font-bold w-[calc(33.3333%_-_16px)] h-[calc(33.3333%_-_16px)] sm:text-8xl lg:text-9xl flex items-center justify-center m-2 rounded-md;
+  @apply bg-black/10 relative cursor-pointer whitespace-nowrap transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(2,132,199,0.7)];
 }
 
 section.turn {
@@ -22,7 +22,7 @@ section.turn {
 }
 
 .score {
-  @apply absolute top-10 right-10;
+  @apply absolute top-24 sm:top-10 right-10;
 }
 
 .score h2 {
@@ -34,7 +34,7 @@ button {
 }
 
 .return {
-  @apply absolute top-10 left-10 hover:scale-150;
+  @apply absolute top-24 sm:top-10 left-10 hover:scale-150;
 }
 
 .close {

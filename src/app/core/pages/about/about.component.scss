@@ -1,23 +1,23 @@
 article {
-    @apply flex flex-col;
-  }
-  
-  h1 {
-    @apply text-3xl font-semibold;
-  }
-  
-  p {
-    @apply font-thin text-justify;
-  }
-  
-  main {
-    @apply flex;
-  }
-  
-  section {
-    @apply w-1/2 text-center px-10;
-  }
-  
-  section:first-child {
-      border-right: solid #0284c7 1px
-  }
+  @apply flex flex-col;
+}
+
+h1 {
+  @apply text-3xl font-semibold;
+}
+
+p {
+  @apply font-thin text-justify;
+}
+
+main {
+  @apply md:flex;
+}
+
+section {
+  @apply md:w-1/2 text-center sm:px-10 md:border-solid;
+}
+
+section:first-child {
+  border-right: #0284c7 1px;
+}

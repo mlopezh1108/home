@@ -1,14 +1,14 @@
 header {
-  @apply w-full min-h-20 px-5 py-3 flex flex-wrap items-end justify-end  relative;
-  @apply bg-[url('/assets/ce.jpg')] bg-no-repeat bg-cover bg-opacity-90;
-  @apply fixed top-0 w-full z-50;
+  @apply w-full min-h-20 px-5 py-3 items-end justify-end  relative;
+  @apply bg-[url('../../../../assets/ce.jpg')] bg-no-repeat bg-cover;
+  @apply w-full bg-sky-600;
 }
 
 section {
-  @apply mx-auto sm:w-full lg:w-fit bg-[rgba(0,0,0,0.4)] px-2 py-1 rounded-md;
+  @apply rounded-md bg-black/30;
   h1,
   h2 {
-    @apply text-center;
+    @apply text-center px-2 py-1 w-fit mx-auto;
   }
   h1 {
     @apply text-2xl font-light;
@@ -19,14 +19,14 @@ section {
 }
 
 img {
-  @apply rounded-full h-32 object-cover absolute left-5 -bottom-16;
+  @apply hidden md:block rounded-full h-32 object-cover absolute left-5;
   border: solid 2px white;
 }
 
 nav {
-  @apply justify-center flex items-center h-full sm:w-full lg:w-fit;
+  @apply justify-center flex flex-wrap items-center bg-black/30 h-full;
 }
 
 a {
-  @apply flex items-center gap-3 px-5 py-3 rounded-md cursor-pointer hover:bg-[rgba(255,255,255,0.1)] hover:font-semibold;
+  @apply flex items-center gap-3 px-5 py-3 rounded-md cursor-pointer hover:bg-white/10 hover:font-semibold;
 }
