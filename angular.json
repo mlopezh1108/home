@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "developz",
   "projects": {
     "portfolio": {
       "projectType": "application",
@@ -24,8 +24,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "./dist/developz",
-            "baseHref": "/home/",
+            "outputPath": "docs",
+            "baseHref": "/developz/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -107,6 +107,6 @@
     }
   },
   "cli": {
-    "analytics": "3d46ec1f-5dfd-443b-af64-0b7553da905e"
+    "analytics": "16d8dc0a-69eb-437c-ac92-2c1cfa73a82e"
   }
 }
