@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run delete:docs && ng build --base-href ./ && npm run copy:docs",
+    "build": "npm run delete:docs && ng build --base-href ./home && npm run copy:docs",
     "delete:docs": "del docs",
     "copy:docs": "copyfiles ./docs/browser/* ./docs -f && del docs/browser",
     "watch": "ng build --watch --configuration development",
