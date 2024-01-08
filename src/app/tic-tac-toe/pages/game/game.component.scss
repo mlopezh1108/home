@@ -17,8 +17,8 @@ section.cell {
   @apply bg-black/10 relative cursor-pointer whitespace-nowrap transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(2,132,199,0.7)];
 }
 
-section.turn {
-  @apply flex items-center gap-2;
+.score > i {
+  @apply text-7xl
 }
 
 .score {

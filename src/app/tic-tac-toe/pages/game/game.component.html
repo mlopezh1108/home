@@ -16,10 +16,7 @@
   </div>
   <div class="score">
     <h2>Turno</h2>
-    <section class="turn">
-      <label for="">Jugador:</label>
-      <i [class]="'material-symbols-outlined ' + player"> {{ player }} </i>
-    </section>
+    <i [class]="'material-symbols-outlined ' + player"> {{ player }} </i>
     @if (winner) {
     <button (click)="cleanBoard()">REINICIAR</button>
     }
