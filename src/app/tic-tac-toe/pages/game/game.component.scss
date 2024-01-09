@@ -13,12 +13,14 @@ div.board {
 }
 
 section.cell {
-  @apply border-solid border-2 border-sky-600/20 font-bold w-[calc(33.3333%_-_16px)] h-[calc(33.3333%_-_16px)] sm:text-8xl lg:text-9xl flex items-center justify-center m-2 rounded-md;
-  @apply bg-black/10 relative cursor-pointer whitespace-nowrap transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(2,132,199,0.7)];
+  @apply border-solid border-2 border-sky-600/20 font-bold w-[calc(33.3333%_-_16px)];
+  @apply h-[calc(33.3333%_-_16px)] text-5xl sm:text-8xl lg:text-9xl flex items-center;
+  @apply justify-center m-2 rounded-md bg-black/10 relative cursor-pointer whitespace-nowrap;
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(2,132,199,0.7)];
 }
 
 .score > i {
-  @apply text-7xl
+  @apply text-5xl sm:text-8xl lg:text-9xl;
 }
 
 .score {

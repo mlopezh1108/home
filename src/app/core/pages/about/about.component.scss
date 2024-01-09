@@ -11,11 +11,11 @@ p {
 }
 
 main {
-  @apply md:flex;
+  @apply lg:flex;
 }
 
 section {
-  @apply md:w-1/2 text-center sm:px-10 md:border-solid;
+  @apply lg:w-1/2 text-center sm:px-10;
 }
 
 section:first-child {
