@@ -30,7 +30,7 @@ export class GameComponent {
 
   #draw() {
     this.cleanBoard();
-    alert('Juempo en empate');
+    alert('Juego en empate');
   }
 
   #checkWinner(col: number, row: number) {
