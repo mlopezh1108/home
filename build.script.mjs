@@ -1,8 +1,6 @@
 import { execSync } from 'child_process';
-import { readFileSync, writeFileSync } from 'fs';
-import { default as Prompt } from 'prompt-sync';
+import { readFileSync } from 'fs';
 
-const prompt = Prompt();
 const PACKAGE = './package.json';
 
 start();
