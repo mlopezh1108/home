@@ -1,0 +1,11 @@
+:host {
+    @apply flex flex-col w-full h-full overflow-hidden;
+}
+
+main {
+    @apply overflow-y-auto px-10 pb-10 md:px-40 lg:px-52 xl:px-60;
+    @apply relative flex flex-col gap-10;
+    button {
+        @apply hidden absolute bottom-10 right-10 -rotate-90 hover:scale-125;
+    }
+}

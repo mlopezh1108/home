@@ -1,0 +1,47 @@
+<h2 id="skills">Habilidades</h2>
+<hr />
+<p>
+  En los proyectos en los cuales he colaborado, me he enfrentado a retos
+  particulares y para cada uno de ellos se ha elegido un stack tecnológico en
+  específico para implementar la solución. Algunas de éstos lenguajes,
+  frameworks, bases de datos y herramientas son:
+</p>
+<br />
+<article>
+  <div>
+    <label>Lenguajes</label>
+    <section>
+      <figure *ngFor="let item of languages | keyvalue">
+        <img [src]="item.value" [alt]="item.value" />
+        <figcaption>{{ item.key }}</figcaption>
+      </figure>
+    </section>
+  </div>
+  <div>
+    <label>Frameworks</label>
+    <section>
+      <figure *ngFor="let item of frameworks | keyvalue">
+        <img [src]="item.value" [alt]="item.value" />
+        <figcaption>{{ item.key }}</figcaption>
+      </figure>
+    </section>
+  </div>
+  <div>
+    <label>Bases de Datos</label>
+    <section>
+      <figure *ngFor="let item of db | keyvalue">
+        <img [src]="item.value" [alt]="item.value" />
+        <figcaption>{{ item.key }}</figcaption>
+      </figure>
+    </section>
+  </div>
+  <div>
+    <label>Herramientas</label>
+    <section>
+      <figure *ngFor="let item of tools | keyvalue">
+        <img [src]="item.value" [alt]="item.value" />
+        <figcaption>{{ item.key }}</figcaption>
+      </figure>
+    </section>
+  </div>
+</article>

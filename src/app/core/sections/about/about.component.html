@@ -1,0 +1,47 @@
+<header id="about">
+  <img
+    id="profile-picture"
+    src="https://cutt.ly/twHuBfqB"
+    alt="Profile Picture"
+  />
+  <section>
+    <h1>Marcos López</h1>
+    <h3>
+      Desarrollador Full Stack
+      <i>
+        <mat-icon class="material-icons-outlined" color="primary"
+          >keyboard</mat-icon
+        >
+        <mat-icon class="material-icons-outlined" color="primary"
+          >mouse</mat-icon
+        >
+      </i>
+    </h3>
+  </section>
+</header>
+
+<hr />
+
+<p>
+  Ingeniero en Sistemas Computacionales graduado por la Escuela Superior de
+  Cómputo (ESCOM) del Instituto Politécnico Nacional en México. Apasionado por
+  el desarrollo web y con +5 años de experiencia. Actualmente me desempeño como
+  desarrollador Back End Senior en Palo IT. Me considero una persona entusiasta,
+  alegre y dispuesto a colaborar con otras personas para lograr los objetivos
+  del proyecto. Tengo el compromiso personal y el ideal de capacitarme
+  continuamente para mantenerme actualizado y ofrecer un trabajo de calidad.
+</p>
+<br />
+<h2 id="studies">Formación</h2>
+
+<hr />
+
+<article>
+  @for (item of studies; track $index) {
+  <section>
+    <h4>{{ item.title }}</h4>
+    <h5>{{ item.subtitle }}</h5>
+    <h6>{{ item.date }}</h6>
+  </section>
+  }
+</article>

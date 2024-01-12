@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <section>
+    @for (section of sections; track $index) {
+    <a [href]="section.href">
+      <mat-icon class="material-icons-outlined">{{ section.icon }}</mat-icon>
+      {{ section.title }}
+    </a>
+    }
+  </section>
+</mat-toolbar>

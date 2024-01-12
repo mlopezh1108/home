@@ -1,0 +1,23 @@
+article {
+  @apply flex flex-wrap gap-5 justify-center md:justify-start;
+}
+
+div {
+  @apply w-full border-solid border-2;
+  @apply border-sky-600 px-3 py-2 rounded-md;
+  label {
+    @apply text-lg font-thin;
+  }
+  section {
+    @apply flex flex-wrap gap-6 items-center justify-center mt-3;
+    figure {
+      @apply flex flex-col items-center justify-center;
+      img {
+        @apply w-16 rounded-full border-solid border-2 border-sky-600 p-1 object-contain;
+      }
+      figcaption {
+        @apply text-sm;
+      }
+    }
+  }
+}
