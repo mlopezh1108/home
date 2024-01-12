@@ -1,0 +1,32 @@
+header {
+  @apply flex relative gap-5 items-center;
+  img#profile-picture {
+    @apply rounded-full h-24;
+    border: solid 2px white;
+  }
+  section {
+    @apply flex-auto;
+  }
+}
+
+h3 {
+  @apply flex flex-wrap font-light gap-5;
+}
+
+i {
+  @apply flex items-center gap-2;
+  mat-icon {
+    @apply flex items-center w-fit h-fit text-5xl;
+  }
+  mat-icon:last-child {
+    @apply text-3xl;
+  }
+}
+
+article {
+  @apply flex flex-wrap justify-center gap-5;
+  section {
+    @apply w-full md:w-[45%] text-center border-solid border-2;
+    @apply border-sky-600 rounded-md p-3;
+  }
+}

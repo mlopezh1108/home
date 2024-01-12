@@ -1,0 +1,15 @@
+section {
+  @apply flex flex-col justify-center gap-5;
+  p {
+    @apply mr-auto;
+  }
+}
+
+footer {
+  @apply flex gap-5;
+  a {
+    @apply flex items-center gap-2 cursor-pointer px-3 py-2 rounded-md;
+    @apply border-solid border-2 border-transparent hover:bg-white/10;
+    @apply hover:border-white hover:scale-105;
+  }
+}
