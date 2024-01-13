@@ -1,20 +1,12 @@
 <header id="about">
-  <img
-    id="profile-picture"
-    src="https://cutt.ly/twHuBfqB"
-    alt="Profile Picture"
-  />
+  <img id="profile-picture" src="https://cutt.ly/twHuBfqB" alt="Profile Picture" />
   <section>
     <h1>Marcos López</h1>
     <h3>
       Desarrollador Full Stack
       <i>
-        <mat-icon class="material-icons-outlined" color="primary"
-          >keyboard</mat-icon
-        >
-        <mat-icon class="material-icons-outlined" color="primary"
-          >mouse</mat-icon
-        >
+        <mat-icon class="material-icons-outlined" color="primary">keyboard</mat-icon>
+        <mat-icon class="material-icons-outlined" color="primary">mouse</mat-icon>
       </i>
     </h3>
   </section>
@@ -38,10 +30,10 @@
 
 <article>
   @for (item of studies; track $index) {
-  <section>
-    <h4>{{ item.title }}</h4>
-    <h5>{{ item.subtitle }}</h5>
-    <h6>{{ item.date }}</h6>
-  </section>
+  <mat-card class="mat-elevation-z8">
+    <mat-card-title>{{ item.title }}</mat-card-title>
+    <mat-card-subtitle>{{ item.subtitle }}</mat-card-subtitle>
+    <p>{{ item.date }}</p>
+  </mat-card>
   }
 </article>

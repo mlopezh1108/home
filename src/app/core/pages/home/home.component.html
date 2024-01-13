@@ -1,11 +1,10 @@
 <app-header></app-header>
 <br />
-<main #main>
-  <app-about></app-about>
-  <app-skills></app-skills>
-  <!-- <app-projects></app-projects> -->
-  <app-contact></app-contact>
-  <button mat-mini-fab color="primary" id="start-btn">
-    <mat-icon class="material-icons-outlined">start</mat-icon>
-  </button>
-</main>
+<mat-drawer-container>
+  <mat-drawer-content>    
+    <app-about></app-about>
+    <app-skills></app-skills>
+    <!-- <app-projects></app-projects> -->
+    <app-contact></app-contact>
+  </mat-drawer-content>
+</mat-drawer-container>

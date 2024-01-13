@@ -2,13 +2,13 @@ article {
   @apply flex flex-wrap gap-5 justify-center md:justify-start;
 }
 
-div {
-  @apply w-full border-solid border-2;
+mat-card {
+  @apply w-full border-solid border-[1px];
   @apply border-sky-600 px-3 py-2 rounded-md;
   label {
     @apply text-lg font-thin;
   }
-  section {
+  mat-card-content {
     @apply flex flex-wrap gap-6 items-center justify-center mt-3;
     figure {
       @apply flex flex-col items-center justify-center;

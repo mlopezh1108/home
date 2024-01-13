@@ -9,7 +9,7 @@ export class HeaderComponent {
   sections = [
     { href: '#studies', icon: 'school', title: 'Formación' },
     { href: '#skills', icon: 'extension', title: 'Habilidades' },
-    { href: '#projects', icon: 'code', title: 'Proyectos' },
+    // { href: '#projects', icon: 'code', title: 'Proyectos' },
     { href: '#contact', icon: 'contact_page', title: 'Contacto' },
   ];
 }

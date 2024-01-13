@@ -1,11 +1,8 @@
 :host {
-    @apply flex flex-col w-full h-full overflow-hidden;
+  @apply flex flex-col w-full h-full overflow-hidden bg-[#fafafa];
 }
 
-main {
-    @apply overflow-y-auto px-10 pb-10 md:px-40 lg:px-52 xl:px-60;
-    @apply relative flex flex-col gap-10;
-    button {
-        @apply hidden absolute bottom-10 right-10 -rotate-90 hover:scale-125;
-    }
+mat-drawer-content {
+  @apply overflow-y-auto w-full px-9 pb-10 sm:px-28 md:px-40 lg:px-52 xl:px-60;
+  @apply relative flex flex-col gap-10;
 }

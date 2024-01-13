@@ -8,40 +8,56 @@
 </p>
 <br />
 <article>
-  <div>
-    <label>Lenguajes</label>
-    <section>
-      <figure *ngFor="let item of languages | keyvalue">
+  <mat-card class="mat-elevation-z8">
+    <mat-card-header>
+      <mat-card-title>Lenguajes</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      @for (item of languages | keyvalue; track $index) {
+      <figure>
         <img [src]="item.value" [alt]="item.value" />
         <figcaption>{{ item.key }}</figcaption>
       </figure>
-    </section>
-  </div>
-  <div>
-    <label>Frameworks</label>
-    <section>
-      <figure *ngFor="let item of frameworks | keyvalue">
+      }
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="mat-elevation-z8">
+    <mat-card-header>
+      <mat-card-title>Frameworks</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      @for (item of frameworks | keyvalue; track $index) {
+      <figure>
         <img [src]="item.value" [alt]="item.value" />
         <figcaption>{{ item.key }}</figcaption>
       </figure>
-    </section>
-  </div>
-  <div>
-    <label>Bases de Datos</label>
-    <section>
-      <figure *ngFor="let item of db | keyvalue">
+      }
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="mat-elevation-z8">
+    <mat-card-header>
+      <mat-card-title>Bases de datos</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      @for (item of db | keyvalue; track $index) {
+      <figure>
         <img [src]="item.value" [alt]="item.value" />
         <figcaption>{{ item.key }}</figcaption>
       </figure>
-    </section>
-  </div>
-  <div>
-    <label>Herramientas</label>
-    <section>
-      <figure *ngFor="let item of tools | keyvalue">
+      }
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="mat-elevation-z8">
+    <mat-card-header>
+      <mat-card-title>Herramientas</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      @for (item of tools | keyvalue; track $index) {
+      <figure>
         <img [src]="item.value" [alt]="item.value" />
         <figcaption>{{ item.key }}</figcaption>
       </figure>
-    </section>
-  </div>
+      }
+    </mat-card-content>
+  </mat-card>
 </article>
