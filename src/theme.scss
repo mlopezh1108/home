@@ -1,17 +1,23 @@
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 
-$my-primary: mat.define-palette(mat.$light-blue-palette, 800);
-$my-accent: mat.define-palette(mat.$orange-palette, 700, 800, 900);
+$primary: mat.define-palette(mat.$light-blue-palette, 800);
+$accent: mat.define-palette(mat.$orange-palette, 700, 800, 900);
 
-// The "warn" palette is optional and defaults to red if not specified.
-$my-warn: mat.define-palette(mat.$red-palette);
+$light-theme: mat.define-light-theme($primary, $accent);
+$dark-theme: mat.define-dark-theme($primary, $accent);
 
-$my-theme: mat.define-light-theme((
- color: (
-   primary: $my-primary,
-   accent: $my-accent,
-   warn: $my-warn,
- )
-));
+@include mat.all-component-themes($light-theme);
+@include mat.core-theme($light-theme);
+@include mat.button-theme($light-theme);
 
-@include mat.all-component-themes($my-theme);
+.dark-theme {
+  @include mat.all-component-themes($dark-theme);
+  @include mat.core-theme($dark-theme);
+  @include mat.button-theme($dark-theme);
+}
+
+// @media (prefers-color-scheme: light) {
+//   @include mat.all-component-themes($light-theme);
+//   @include mat.core-theme($light-theme);
+//   @include mat.button-theme($light-theme);
+// }

@@ -1,0 +1,6 @@
+a {
+    @apply w-full justify-start text-2xl px-5 py-7;
+    mat-icon {
+        @apply text-2xl flex items-center w-fit h-fit;
+    }
+}

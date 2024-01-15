@@ -1,10 +1,11 @@
-<app-header></app-header>
-<br />
+<app-header (menu)="drawer.toggle()"></app-header>
 <mat-drawer-container>
-  <mat-drawer-content>    
+  <mat-drawer #drawer mode="over">
+    <app-sidenav (selected)="drawer.toggle()"></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
     <app-about></app-about>
     <app-skills></app-skills>
-    <!-- <app-projects></app-projects> -->
     <app-contact></app-contact>
   </mat-drawer-content>
 </mat-drawer-container>

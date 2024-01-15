@@ -1,10 +1,14 @@
 <mat-toolbar color="primary" class="mat-elevation-z8">
   <section>
+    <button mat-icon-button (click)="menu.emit()"><mat-icon>menu</mat-icon></button>
     @for (section of sections; track $index) {
     <a [href]="section.href">
       <mat-icon class="material-icons-outlined">{{ section.icon }}</mat-icon>
       {{ section.title }}
     </a>
     }
+    <button mat-icon-button (click)="changeColor()">
+      <mat-icon>{{ dark ? "light_mode" : "dark_mode" }}</mat-icon>
+    </button>
   </section>
 </mat-toolbar>

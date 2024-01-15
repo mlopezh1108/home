@@ -1,0 +1,12 @@
+@for (item of sections; track $index) {
+<a
+  mat-button
+  class="material-icons-outlined"
+  [href]="item.href"
+  (click)="selected.emit()"
+>
+  <mat-icon>{{ item.icon }}</mat-icon>
+  {{ item.title }}
+</a>
+<mat-divider></mat-divider>
+}

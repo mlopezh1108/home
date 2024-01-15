@@ -1,8 +1,12 @@
 :host {
-  @apply flex flex-col w-full h-full overflow-hidden bg-[#fafafa];
+  @apply flex flex-col w-full h-full overflow-hidden;
 }
 
 mat-drawer-content {
-  @apply overflow-y-auto w-full px-9 pb-10 sm:px-28 md:px-40 lg:px-52 xl:px-60;
+  @apply overflow-y-auto w-full px-9 py-10 sm:px-28 md:px-40 lg:px-52 xl:px-60;
   @apply relative flex flex-col gap-10;
+}
+
+mat-drawer {
+  @apply w-dvw md:w-0;
 }

@@ -15,6 +15,7 @@ import { AboutComponent } from './sections/about/about.component';
 import { ContactComponent } from './sections/contact/contact.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
 import { SkillsComponent } from './sections/skills/skills.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 
 
@@ -25,7 +26,8 @@ import { SkillsComponent } from './sections/skills/skills.component';
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    SidenavComponent
   ],
   imports: [
     CommonModule,
