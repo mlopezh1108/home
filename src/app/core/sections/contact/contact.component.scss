@@ -3,6 +3,9 @@ section {
   p {
     @apply mr-auto;
   }
+  iframe {
+    @apply h-[300px] w-full md:w-[80%] mx-auto
+  }
 }
 
 pre {

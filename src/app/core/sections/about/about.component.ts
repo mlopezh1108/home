@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 export class AboutComponent {
   studies = [
     {
+      title: 'Maestría en Inteligencia Artificial',
+      subtitle: 'Universidad Internacional de la Rioja',
+      date: 'En curso',
+    },
+    {
       title: 'Ing. en Sistemas Computacionales',
       subtitle: 'Instituto Politécnico Nacional',
       date: 'Diciembre 2020',
